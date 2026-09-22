@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Elisa Arcanjo">
+    <meta name="date" content="2026-08-11">  
+    <meta name="geo.placename" content="São João Del Rei - MG">
+    <title>Pagina em Blocos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Topo da página -->
+  <header>
+    <img src="senai.jpg" alt="Logotipo">
+    <nav>
+      <a href="#home">Início</a> | 
+      <a href="#servicos">Serviços</a> | 
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo que muda de página para página - Único em cada página -->
+  <main>
+    <article>
+      <h1>Aprendendo mais sobre HTML e suas tags</h1>
+      <p>Tags "header", "main", e "footer" são exemplos de tags semânticas que dão significado ao código...</p>
+      <a href="https://www.pinkandbrain.com/html-basico-e-semantico-header-nav-main-aside-e-footer/" target="_blank" rel="noopener noreferrer">Acesse para saber mais!</a>
+      <h2>Lista de Tags Semânticas da Página:</h2>
+      <ol id="ListaTagsPaginas">
+        <li>Header - Topo</li>
+        <li>Main - Conteúdo principal</li>
+        <li>Footer - Base da página</li>
+      </ol>
+      <h6>Fonte: Exemplo de referência</h6>
+    </article>
+    <br>
+      <!-- O evento onsubmit impede o envio padrão e chama a função JavaScript -->
+      <form id="meuFormulario" onsubmit="salvarEmTxt(event)">
+        <label for="nomeSobrenome">Digite seu nome e sobrenome:</label>
+        <input type="text" id="nomeSobrenome" required placeholder="Escreva seu nome e sobrenome aqui">
+        <button type="submit">Salvar em TXT</button>
+      </form>
+  </main>
+
+  <!-- Base da página - &copy; representa o símbolo de copyright -->
+  <footer>
+    <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
